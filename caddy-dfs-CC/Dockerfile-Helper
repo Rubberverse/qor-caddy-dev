@@ -54,4 +54,4 @@ RUN apk upgrade --no-cache \
     && file /app/go/bin/caddy-"${TARGETARCH}" \
     && apk del --rdepends \
         build_ess \
-    && rm -rf /app/go /app/git /tmp /app/caddy /usr/local/go
+    && rm -rf /app/git /tmp /app/caddy /usr/local/go
